@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@400;500;600;700&family=Fascinate+Inline&family=Kumbh+Sans:wght@400;700&family=Nanum+Pen+Script&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+:root{
+
+
+  --Purple: hsl(259, 100%, 65%);
+  --Lightred: hsl(0, 100%, 67%);
+  --White: hsl(0, 0%, 100%);
+   --Offwhite: hsl(0, 0%, 94%);
+    --Lightgrey: hsl(0, 0%, 86%);
+  --Smokeygrey: hsl(0, 1%, 44%);
+  --Offblack: hsl(0, 0%, 8%);  
+}
+body{
+  font-family: 'Poppins', sans-serif;
+  background-color: #ECECEC;
+}
+.mainContiner{
+  margin: 10rem;
+  width: 40.125rem;
+  height: 30rem;
+  margin-left: 20rem;
+  background-color: var(--White);
+  padding: 3rem;
+  border-radius: 1rem 1rem 8rem 1rem;
+}
+.inputs{
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  margin-bottom: 0rem;
+  
+}
+.input{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.input h3{
+  color: var(--Smokeygrey);
+  font-size: 15px;
+
+}
+.input input{
+  border: 1px solid #DADADA;
+  width: 9rem;
+  padding: 1rem;
+  border-radius: 12px;
+  font-size: calc(1rem + 10px) ;
+  color: black;
+  font-weight: 600;
+  
+}
+.input span{
+  color: var(--Lightred);
+  
+}
+.meduimContiner{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  /* justify-content: space-evenly; */
+}
+hr{
+  width: 30rem;
+}
+.meduimContiner button{
+  background-color: var(--Purple);
+  border-radius: 50%;
+  border: none;
+  padding: 1rem;
+  cursor: pointer;
+  
+}
+.meduimContiner button:hover{
+  background-color: var(--Offblack);
+  transition: 0.3s;
+
+}
+.result{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.result h1 {
+  font-size: 50px;
+  width: 19rem;
+  margin-top: -1rem;
+  margin-left: 2rem;
+}
+
+.result span{
+  color: var(--Purple);
+}
+@media (max-width:375px) {
+
+  .mainContiner{
+    margin: 1rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    width: 360px;
+
+  }
+  .inputs{
+    scale: 0.72;
+    position: relative;
+    left: -4rem;
+  }
+  .meduimContiner button {
+    position: relative;
+    right: 7rem;
+    padding: 0rem;
+}
+.meduimContiner{
+  margin-bottom: 1rem;
+}
+hr{
+  position: relative;
+  color: black;
+  left: 1rem;
+}
+}
